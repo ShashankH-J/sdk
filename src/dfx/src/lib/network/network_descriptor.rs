@@ -16,7 +16,8 @@ impl NetworkDescriptor {
         let name_match = network_name == "ic" || network_name == DEFAULT_IC_GATEWAY;
         let provider_match =
             { providers.len() == 1 && providers.get(0).unwrap() == "https://ic0.app" };
-        name_match || provider_match
+        // name_match || provider_match
+        true
     }
 }
 
